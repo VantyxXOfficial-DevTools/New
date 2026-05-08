@@ -3,7 +3,8 @@
   "name": "vxo-qrispw-webhook",
   "functions": {
     "api/qrispw-webhook.js": {
-      "runtime": "edge"
+      "runtime": "nodejs20.x",
+      "maxDuration": 10
     }
   },
   "routes": [
