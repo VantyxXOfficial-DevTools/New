@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "name": "vxo-payment-webhook",
+  "functions": {
+    "api/qrispw-webhook.js": {
+      "memory": 128,
+      "maxDuration": 15
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/qrispw-webhook",
+      "dest": "/api/qrispw-webhook.js"
+    }
+  ],
+  "env": {
+    "QRISPW_WEBHOOK_SECRET": "secret dari dashboard qris.pw",
+    "BOT_TOKEN": "token bot Telegram",
+    "OWNER_ID": "Telegram user ID owner",
+    "CHANNEL_ID": "Telegram channel/group ID",
+    "BOT_ACTIVATION_SECRET": "bebas — harus sama dengan BOT_ACTIVATION_SECRET di .env bot"
+  }
+}
