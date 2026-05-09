@@ -1,7 +1,9 @@
 {
-  "name": "vxo-qrispw-webhook",
+  "name": "vxo-payment-webhook",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
-  "description": "Webhook QRIS.PW untuk VXO Bot - deploy ke Vercel"
+  "description": "QRIS.PW payment webhook for VXO Bot — Vercel Serverless",
+  "engines": {
+    "node": ">=18"
+  }
 }
